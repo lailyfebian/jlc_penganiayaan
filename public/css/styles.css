@@ -3481,25 +3481,28 @@ p {
 .cta-section-2-button {
     display: inline-flex;
     align-items: center;
-    gap: 15px;
-    background: linear-gradient(135deg,
-            #e1b04d,
-            #c7922d);
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 14px 26px;
+    font-size: 15px;
+    background: linear-gradient(135deg, #e1b04d, #c7922d);
     color: #14213d;
     font-weight: 700;
     text-decoration: none;
-    border-radius: 14px;
-    padding: 18px 30px;
+    border-radius: 12px;
     transition: .35s;
 }
 
 .cta-section-2-button:hover {
     color: #14213d;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 .cta-section-2-button i {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .cta-section-2-right {
