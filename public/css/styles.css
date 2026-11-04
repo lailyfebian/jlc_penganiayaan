@@ -319,13 +319,13 @@ p {
     background:
         linear-gradient(
             to right,
-            rgba(16, 37, 68, 0.95) 0%,
-            rgba(16, 37, 68, 0.7) 40%,
-            rgba(16, 37, 68, 0) 100%
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(255, 255, 255, 0.7) 40%,
+            rgba(255, 255, 255, 0) 100%
         ),
-        url("../images/background-hero-web.png") center center / cover no-repeat;
+        url("../images/background-hero-web.webp") center center / cover no-repeat;
 
-    color: #fff;
+    color: #102544;
 }
 
 /* Abstract Background */
@@ -375,7 +375,7 @@ p {
 
     background: rgba(255, 255, 255, 0.06);
 
-    color: #fff;
+    color: var(--secondary);
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -404,7 +404,7 @@ p {
     line-height: 1.08;
     letter-spacing: -1px;
 
-    color: #fff;
+    color: #102544;
     margin: 0 0 25px;
 }
 
@@ -438,14 +438,14 @@ p {
     font-size: 16px;
     line-height: 1.8;
 
-    color: #fff;
+    color: #102544;
 
     margin-bottom: 20px;
 }
 
 .hero-content p strong,
 .hero-content p b {
-    color: #fff;
+    color: #102544;
     font-weight: 700;
 }
 
@@ -502,7 +502,7 @@ p {
     font-weight: 700;
     line-height: 1.3;
 
-    color: #fff;
+    color: #102544;
 
     margin: 0 0 10px;
 }
@@ -511,7 +511,7 @@ p {
     font-size: 15px;
     line-height: 1.6;
 
-    color: #fff;
+    color: #102544;
 
     margin: 0;
 }
@@ -723,6 +723,7 @@ p {
     isolation: isolate;
     padding: 45px 0 55px;
     background: var(--primary);
+    color: #fff;
 }
 
 /* Gambar di bawah teks */
@@ -733,7 +734,7 @@ p {
     height: 300px;
     margin: 0 auto;
 
-    background: url("../images/background-hero-mobile.png")
+    background: url("../images/background-hero-mobile.webp")
                 center center / cover no-repeat;
 
     border-radius: 12px;
@@ -752,6 +753,7 @@ p {
 
     .hero-badge {
         gap: 8px;
+        color: #fff;
 
         padding: 8px 12px;
         margin-bottom: 20px;
@@ -771,6 +773,7 @@ p {
         letter-spacing: -0.5px;
 
         margin-bottom: 20px;
+        color: #fff;
     }
 
     .hero-title-line {
@@ -783,9 +786,15 @@ p {
     .hero-content p {
         font-size: 14px;
         line-height: 1.75;
-
+        color: #fff;
         margin-bottom: 16px;
+
     }
+    .hero-content p strong,
+.hero-content p b {
+    color: #fff;
+    font-weight: 700;
+}
 
     /* Consultation Box */
 
@@ -1840,9 +1849,8 @@ p {
 .choose-section {
     position: relative;
     padding: 70px 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../images/background-biru.webp")
+                center center / cover no-repeat;
     overflow: hidden;
     background: #fff;
     padding: 90px 0;
@@ -3696,7 +3704,7 @@ p {
         background: linear-gradient(
             rgba(255, 255, 255, 0.6),
             rgba(255, 255, 255, 0.6)
-        ), url("../images/background-decorative.webp")
+        ), url("../images/background-layanan.png")
         center center / cover no-repeat;
     margin-bottom: -150px;
 }
@@ -4662,27 +4670,46 @@ p {
     }
 }
 
+/* ========================================
+   SECTION LAYANAN KHUSUS
+======================================== */
+
 .pengacara-perempuan-section {
     position: relative;
     overflow: hidden;
-    padding: 70px 0;
-    background: linear-gradient(
+    padding: 80px 0;
+
+    background:
+        linear-gradient(
             rgba(255, 255, 255, 0.6),
             rgba(255, 255, 255, 0.6)
-        ), url("../images/background-biru.webp")
+        ),
+        url("../images/background-pengacara-perempuan-bg.png")
         center center / cover no-repeat;
 }
+
+
+/* ========================================
+   CONTAINER
+======================================== */
 
 .pengacara-perempuan-container {
     position: relative;
     z-index: 1;
+
     display: grid;
-    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.8fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
-    gap: 35px;
+    gap: 50px;
+
     width: min(1320px, calc(100% - 48px));
     margin: 0 auto;
 }
+
+
+/* ========================================
+   KOLOM KIRI
+======================================== */
 
 .pengacara-perempuan-content {
     min-width: 0;
@@ -4692,7 +4719,9 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
+
     margin-bottom: 22px;
+
     color: #c18a2b;
     font-size: 18px;
     font-weight: 700;
@@ -4701,13 +4730,17 @@ p {
 
 .pengacara-perempuan-label span {
     display: block;
+    flex: 0 0 46px;
+
     width: 46px;
     height: 3px;
+
     background: #c18a2b;
 }
 
 .pengacara-perempuan-content > h2 {
     margin: 0 0 24px;
+
     color: #102544;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(34px, 3.5vw, 54px);
@@ -4720,10 +4753,11 @@ p {
 }
 
 .pengacara-perempuan-description {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+
     color: #111c33;
-    font-size: 17px;
-    line-height: 1.55;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .pengacara-perempuan-description p {
@@ -4734,112 +4768,212 @@ p {
     margin-bottom: 0;
 }
 
+.pengacara-perempuan-closing {
+    margin: 0;
+
+    color: #111c33;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   KOLOM KANAN - CARD LAYANAN
+======================================== */
+
 .pengacara-perempuan-features {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-top: 100px;
+
+    min-width: 0;
 }
+
+
+/* Card */
 
 .pengacara-perempuan-card {
     display: flex;
     align-items: center;
-    gap: 26px;
-    padding: 20px 24px;
-    border: 1px solid rgba(16, 37, 68, 0.12);
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.42);
-    box-shadow: 0 2px 8px rgba(16, 37, 68, 0.025);
+    gap: 22px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px;
+
+    border: 1px solid rgba(16, 37, 68, 0.10);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.6);
+
+    box-shadow: 0 4px 16px rgba(16, 37, 68, 0.0);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
+
+.pengacara-perempuan-card:hover {
+    background: rgba(255, 255, 255, 0.75);
+    border-color: rgba(200, 154, 61, 0.6);
+    box-shadow: 0 8px 24px rgba(16, 37, 68, 0.07);
+}
+
+
+/* Icon */
 
 .pengacara-perempuan-icon {
     display: flex;
-    flex: 0 0 110px;
+    flex: 0 0 90px;
     align-items: center;
     justify-content: center;
-    width: 110px;
-    height: 110px;
-    border-radius: 18px;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 16px;
     background: #102544;
 }
 
 .pengacara-perempuan-icon img {
     display: block;
+
     width: 78%;
     height: 78%;
+
     object-fit: contain;
 }
+
+
+/* Divider */
 
 .pengacara-perempuan-divider {
     flex: 0 0 2px;
     align-self: stretch;
+
     background: #c18a2b;
 }
 
+
+/* Card Content */
+
+.pengacara-perempuan-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
 .pengacara-perempuan-card-content h3 {
-    margin: 0 0 6px;
+    margin: 0 0 8px;
+
     color: #102544;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .pengacara-perempuan-card-content p {
     margin: 0;
+
     color: #111c33;
-    font-size: 16px;
-    line-height: 1.45;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
-.pengacara-perempuan-visual {
-    min-height: 650px;
-    background: url("../images/background-pengacara-perempuan.png")
-        right center / contain no-repeat;
-}
 
-/* Tablet */
+/* ========================================
+   TABLET
+======================================== */
+
 @media (max-width: 1100px) {
+
     .pengacara-perempuan-section {
-        padding: 55px 0;
+        padding: 60px 0;
     }
 
     .pengacara-perempuan-container {
-        grid-template-columns: 1fr;
-        width: min(900px, calc(100% - 40px));
-    }
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 25px;
 
-    .pengacara-perempuan-visual {
-        display: none;
+        width: calc(100% - 40px);
     }
 
     .pengacara-perempuan-content > h2 {
-        font-size: clamp(32px, 5vw, 46px);
+        font-size: clamp(30px, 3.5vw, 40px);
+    }
+
+    .pengacara-perempuan-description,
+    .pengacara-perempuan-closing {
+        font-size: 15px;
+    }
+
+    .pengacara-perempuan-card {
+        gap: 14px;
+        padding: 18px;
+    }
+
+    .pengacara-perempuan-icon {
+        flex: 0 0 65px;
+
+        width: 65px;
+        height: 65px;
+
+        border-radius: 12px;
+    }
+
+    .pengacara-perempuan-card-content h3 {
+        font-size: 19px;
+    }
+
+    .pengacara-perempuan-card-content p {
+        font-size: 14px;
+        line-height: 1.5;
     }
 }
 
-/* Mobile */
-@media (max-width: 600px) {
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 767px) {
+
     .pengacara-perempuan-section {
         padding: 42px 0;
+
         background-position: center top;
     }
 
     .pengacara-perempuan-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
         width: calc(100% - 32px);
     }
+
+
+    /* Judul dan Deskripsi */
 
     .pengacara-perempuan-label {
         gap: 12px;
         margin-bottom: 16px;
+
         font-size: 14px;
     }
 
     .pengacara-perempuan-label span {
+        flex-basis: 30px;
         width: 30px;
     }
 
     .pengacara-perempuan-content > h2 {
         margin-bottom: 18px;
+
         font-size: clamp(28px, 8vw, 36px);
         line-height: 1.15;
     }
@@ -4849,22 +4983,43 @@ p {
     }
 
     .pengacara-perempuan-description {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
+
         font-size: 15px;
-        line-height: 1.6;
+        line-height: 1.65;
+    }
+
+    .pengacara-perempuan-description p {
+        margin-bottom: 14px;
+    }
+
+    .pengacara-perempuan-closing {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+
+    /* Card Layanan */
+
+    .pengacara-perempuan-features {
+        gap: 14px;
     }
 
     .pengacara-perempuan-card {
         align-items: flex-start;
         gap: 14px;
+
         padding: 16px;
+
         border-radius: 14px;
     }
 
     .pengacara-perempuan-icon {
         flex: 0 0 58px;
+
         width: 58px;
         height: 58px;
+
         border-radius: 12px;
     }
 
@@ -4873,12 +5028,147 @@ p {
     }
 
     .pengacara-perempuan-card-content h3 {
+        margin-bottom: 6px;
+
         font-size: 18px;
         line-height: 1.3;
     }
 
     .pengacara-perempuan-card-content p {
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.55;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE KECIL
+======================================== */
+
+@media (max-width: 400px) {
+
+    .pengacara-perempuan-container {
+        width: calc(100% - 28px);
+    }
+
+    .pengacara-perempuan-card {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .pengacara-perempuan-icon {
+        flex-basis: 48px;
+
+        width: 48px;
+        height: 48px;
+    }
+
+    .pengacara-perempuan-card-content h3 {
+        font-size: 16px;
+    }
+
+    .pengacara-perempuan-card-content p {
+        font-size: 13px;
+    }
+
+}
+
+.layanan-hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ), url("../images/background-biru.webp")
+        center center / cover no-repeat;
+}
+
+.layanan-pengacara-container {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.8fr);
+    align-items: center;
+    gap: 35px;
+    width: min(1320px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.layanan-pengacara-content {
+    min-width: 0;
+}
+
+.layanan-pengacara-content > h2 {
+    margin: 0 0 24px;
+    color: #102544;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 3.5vw, 54px);
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.layanan-pengacara-content > h2 span {
+    color: #c18a2b;
+}
+
+.layanan-pengacara-description {
+    margin-bottom: 32px;
+    color: #111c33;
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+.layanan-pengacara-description p {
+    margin: 0 0 16px;
+}
+
+.layanan-pengacara-description p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .layanan-pengacara-section {
+        padding: 55px 0;
+    }
+
+    .layanan-pengacara-container {
+        grid-template-columns: 1fr;
+        width: min(900px, calc(100% - 40px));
+    }
+
+    .layanan-pengacara-content > h2 {
+        font-size: clamp(32px, 5vw, 46px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .layanan-pengacara-section {
+        padding: 42px 0;
+        background-position: center top;
+    }
+
+    .layanan-pengacara-container {
+        width: calc(100% - 32px);
+    }
+
+    .layanan-pengacara-content > h2 {
+        margin-bottom: 18px;
+        font-size: clamp(28px, 8vw, 36px);
+        line-height: 1.15;
+    }
+
+    .layanan-pengacara-content > h2 br {
+        display: none;
+    }
+
+    .layanan-pengacara-description {
+        margin-bottom: 24px;
+        font-size: 15px;
+        line-height: 1.6;
     }
 }
