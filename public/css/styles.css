@@ -1784,7 +1784,11 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    background: #fff;
+    background:
+        radial-gradient(circle at top,
+            rgba(200, 138, 27, .10),
+            transparent 45%),
+        #fff;
     padding: 90px 0;
 }
 
@@ -1843,7 +1847,7 @@ p {
 .choose-heading {
     margin-bottom: 24px;
     color: #132645;
-    font-size: 42px;
+    font-size: 46px;
     line-height: 1.2;
     font-weight: 700;
 }
@@ -1904,7 +1908,7 @@ p {
 .choose-feature-card .why-title {
     margin: 0 0 4px;
     color: #132645;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.35;
     font-weight: 700;
 }
@@ -1988,11 +1992,11 @@ p {
     }
 
     .choose-feature-card .why-title {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .choose-feature-card .why-content p:not(.why-title) {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 1.65;
     }
 }
@@ -2014,7 +2018,6 @@ p {
         transition: none !important;
     }
 }
-
 
 .layanan-hero {
     position: relative;
@@ -2194,7 +2197,7 @@ p {
 
 .section-title {
     margin-top: 20px;
-    font-size: 48px;
+    font-size: 46px;
     line-height: 1.2;
     font-weight: 700;
     color: var(--primary);
@@ -2996,13 +2999,6 @@ p {
     overflow: hidden;
 }
 
-.team-section-2 {
-    position: relative;
-    padding: 70px 0;
-    background: #fbfbfc;
-    overflow: hidden;
-}
-
 .team-section-2::before {
     content: "";
     position: absolute;
@@ -3067,15 +3063,11 @@ p {
     color: #c89a3c;
 }
 
-.team-section-2-heading p {
-    font-size: 16px;
-}
-
 .team-section-2-description {
     max-width: 850px;
     margin: 0 auto;
     color: #4d596a;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.8;
 }
 
@@ -3264,7 +3256,7 @@ p {
     }
 
     .team-section-2-subtitle {
-        font-size: 13px;
+        font-size: 11px;
         letter-spacing: 2px;
     }
 
@@ -3274,11 +3266,15 @@ p {
     }
 
     .team-section-2-title {
-        font-size: 38px;
+        font-size: 28px !important;
+    }
+
+    .team-section-2-title span {
+        font-size: 28px !important;
     }
 
     .team-section-2-description {
-        font-size: 18px;
+        font-size: 14px !important;
         line-height: 1.8;
     }
 
@@ -3296,9 +3292,6 @@ p {
 }
 
 @media (max-width:575.98px) {
-    .team-section-2-heading p{
-        font-size: 14px;
-    }
     .team-section-2 {
         padding: 60px 0;
     }
@@ -3307,10 +3300,10 @@ p {
         font-size: 32px;
     }
 
-    .team-section-2-description {
+    /*.team-section-2-description {
         font-size: 16px;
     }
-
+*/
     .team-section-2-content .team-name {
         font-size: 19px;
     }
@@ -3328,7 +3321,6 @@ p {
         transition: none;
     }
 }
-
 .cta-section-2 {
     position: relative;
     overflow: hidden;
@@ -3615,7 +3607,7 @@ p {
     }
 
     .cta-section-2-title {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     .cta-section-2-subtitle {
@@ -3660,10 +3652,10 @@ p {
         padding: 25px 18px;
     }
 
-    .cta-section-2-title {
+   /* .cta-section-2-title {
         font-size: 30px;
     }
-
+*/
     .cta-section-2-subtitle {
         font-size: 17px;
     }
@@ -4387,7 +4379,6 @@ p {
 /* ========================================
    JLC GALLERY SECTION
 ======================================== */
-
 .jlc-gallery-section {
     --primary: #102544;
     --primary-light: #1b3a63;
@@ -4399,10 +4390,10 @@ p {
     overflow: hidden;
     background:
         radial-gradient(ellipse at 0% 0%,
-        rgba(16, 37, 68, 0.09), transparent 32%),
-    radial-gradient(ellipse at 100% 100%,
-        rgba(16, 37, 68, 0.10), transparent 30%),
-    #fffdfa;
+            rgba(200,154,61,.09), transparent 32%),
+        radial-gradient(ellipse at 100% 100%,
+            rgba(200,154,61,.10), transparent 30%),
+        #fffdfa;
 }
 
 /* Abstract Decoration */
@@ -4472,7 +4463,7 @@ p {
 .gallery-heading h2 {
     color: var(--primary);
     font-family: Georgia, serif;
-    font-size: clamp(34px, 4vw, 55px);
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.13;
     margin-bottom: 15px;
@@ -4648,10 +4639,15 @@ p {
         gap: 12px;
     }
 
+    .gallery-heading h2{
+        font-size: 28px;
+    }
+
     .gallery-heading p {
         font-size: 14px;
     }
 }
+
 
 /* ========================================
    SECTION LAYANAN KHUSUS
@@ -4664,16 +4660,16 @@ p {
     background: linear-gradient(
             rgba(255, 255, 255, 0.6),
             rgba(255, 255, 255, 0.6)
-        ), url("../images/background-pengacara-perempuan-bg.png")
+        ), url("../images/background-biru.webp")
         center center / cover no-repeat;
 }
 
 .pengacara-perempuan-container {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.8fr);
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 35px;
     width: min(1320px, calc(100% - 48px));
     margin: 0 auto;
@@ -4733,6 +4729,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
 }
 
 .pengacara-perempuan-card {
@@ -4770,6 +4767,10 @@ p {
     background: #c18a2b;
 }
 
+.pengacara-perempuan-card-content {
+    min-width: 0;
+}
+
 .pengacara-perempuan-card-content h3 {
     margin: 0 0 6px;
     color: #102544;
@@ -4786,10 +4787,8 @@ p {
     line-height: 1.45;
 }
 
-.pengacara-perempuan-visual {
-    min-height: 650px;
-    background: url("../images/background-pengacara-perempuan.png")
-        right center / contain no-repeat;
+.pengacara-perempuan-features > p {
+    margin: 8px 0 0;
 }
 
 /* Tablet */
@@ -4799,12 +4798,8 @@ p {
     }
 
     .pengacara-perempuan-container {
-        grid-template-columns: 1fr;
         width: min(900px, calc(100% - 40px));
-    }
-
-    .pengacara-perempuan-visual {
-        display: none;
+        gap: 28px;
     }
 
     .pengacara-perempuan-content > h2 {
@@ -4821,6 +4816,7 @@ p {
 
     .pengacara-perempuan-container {
         width: calc(100% - 32px);
+        gap: 24px;
     }
 
     .pengacara-perempuan-label {
@@ -4843,9 +4839,9 @@ p {
         display: none;
     }
 
-    .pengacara-perempuan-description p {
+    .pengacara-perempuan-description {
         margin-bottom: 24px;
-        font-size: 14px !important
+        font-size: 14px;
         line-height: 1.6;
     }
 
@@ -4876,8 +4872,12 @@ p {
         font-size: 14px !important;
         line-height: 1.5;
     }
-}
 
+    .pengacara-perempuan-features > p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
 
 
 .layanan-hero-section {
@@ -5046,7 +5046,7 @@ p {
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
     color: #102544 !important;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.4; display: block;
     color: #c58a20;
@@ -5055,7 +5055,7 @@ p {
 .list-kota-header h2 span{
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.4; 
     display: block;
@@ -5068,7 +5068,7 @@ p {
     font-family: 'Inter', serif !important;
     margin: 0 auto 12px;
     color: #727272;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 400;
     line-height: 1.8;
 }
@@ -5112,7 +5112,7 @@ p {
     border: 1px solid #E9EDF3;
     border-radius: 8px;
     color: #102544 !important;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 500;
     line-height: 1.5;
     text-decoration: none !important;
@@ -5172,7 +5172,7 @@ p {
     font-family: 'Inter', serif !important;
     margin: 0;
     color: #526176;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 400;
     line-height: 1.7;
     text-align: center;
@@ -5227,7 +5227,7 @@ p {
 
     .list-kota-header h2 {
         font-family: 'Georgia', serif !important;
-        font-size: 27px !important;
+        font-size: 28px !important;
         line-height: 1.4;
         margin-bottom: 12px;
     }
