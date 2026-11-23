@@ -1391,7 +1391,7 @@ p {
     }
 
     .about-title {
-        font-size: 28px;
+        font-size: 28px !important;
         line-height: 1.25;
         margin-bottom: 20px;
     }
@@ -1428,12 +1428,12 @@ p {
         letter-spacing: 1.5px;
     }
 
-    .about-title {
+   /* .about-title {
         font-size: 30px;
         margin: 12px 0 18px;
         line-height: 1.3;
     }
-
+*/
     .about-content {
         max-height: none;
     }
@@ -1750,7 +1750,7 @@ p {
     }
 
     .section-heading h3 {
-        font-size: 24px !important;
+        font-size: 28px !important;
     }
 
     .section-heading p {
@@ -2435,6 +2435,7 @@ p {
     color: var(--muted);
     margin: 0;
     line-height: 1.8;
+    font-size: 16px;
 }
 
 .consult-btn {
@@ -2530,6 +2531,10 @@ p {
 
     .consult-left h5 {
         font-size: 24px !important;
+    }
+
+    .consult-left p {
+        font-size: 14px;
     }
 
     .consult-icon {
@@ -3668,6 +3673,7 @@ p {
         font-size: 15px;
     }
 }
+
 
 /* ==========================
    FAQ SECTION
