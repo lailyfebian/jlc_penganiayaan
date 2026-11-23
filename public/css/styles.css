@@ -3621,12 +3621,12 @@ p {
     }
 
     .cta-section-2-description {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 1.9;
     }
 
     .cta-section-2-description p {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 1.9;
     }
 
